@@ -86,8 +86,7 @@ function changeOption(e){
       )
     })}
   </select>
-  <select onChange={(e)=>{data.margin=e.target.value}}  className='bg-slate-600 w-full h-14 indent-4 outline-blue-500 mt-4' >
-    
+  <select onChange={(e)=>{data.margin=e.target.value}}  className='bg-slate-600 w-full h-14 indent-4 outline-blue-500 mt-4'>
     <option value="1.3">1.3x</option>
     <option value="1.4">1.4x</option>
     <option value="1.5">1.5x</option>

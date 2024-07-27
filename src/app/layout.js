@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
    
       <Navbar></Navbar>
-      <div className="flex">
+      <div className="flex ">
       <Sidebar></Sidebar>
       <div className="flex w-full overflow-y-scroll bg-slate-800 text-slate-100" id="body">
       {children}
