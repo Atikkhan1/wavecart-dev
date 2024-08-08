@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <Navbar></Navbar>
       <div className="flex ">
       <Sidebar></Sidebar>
-      <div className="flex w-full overflow-y-scroll bg-slate-800 text-slate-100" id="body">
+      <div className="flex w-full overflow-y-scroll bg-neutral-950 text-slate-100" id="body" style={{height:"94vh"}}>
       {children}
       </div>
       </div>

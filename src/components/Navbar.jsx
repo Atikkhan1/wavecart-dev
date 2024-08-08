@@ -8,7 +8,7 @@ const Navbar = () => {
   let path = useRouter()
   let url = path.pathname
   return (
-    <div className='flex w-full h-10 bg-black items-center text-white'  style={{height:"6vh"}}>
+    <div className='flex w-full h-10 bg-green-700 items-center text-white' style={{height:"6vh"}}>
 
       <button onClick={()=>{path.back()}} >{url == '' ? '':<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="ml-4"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg>}</button>
 

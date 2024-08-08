@@ -1,18 +1,18 @@
-
-
-
-function searchAndFind(Object, toFind){
+function sortSame(obj){
     let res = []
-    for (let i = 0; i < Object.length; i++) {
-        const element = Object[i].name.match(/\b\w+\b/g);
-        for (let j = 0; j < element.length; j++) {
-            if (toFind.toLowerCase()== element[j].toLowerCase()) {
-                res.push(Object[i])
-            }
+    let ans = []
+    for (let i = 0; i < obj.length; i++) {
+        if (obj[i] == obj[i+1]){
+            for (let j = 0; j < obj.length; j++) {
+            res.push(obj[j])
         }
-
     }
+    }
+
     return res
 }
 
 
+let obj = [{_id:"a"},{_id:"a"},{_id:"a"},{_id:"c"},{_id:"d"},{_id:"b"},{_id:"a"}]
+
+console.log(sortSame(obj))
